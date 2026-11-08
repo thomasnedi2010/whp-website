@@ -1,0 +1,70 @@
+/* WHP Services mega menu — dark brand retained, no desktop internal scroll. */
+#mainHeader .nav-container{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;min-height:72px}
+#mainHeader .nav-links{display:flex;align-items:center;justify-content:flex-end;gap:clamp(.65rem,1.5vw,1.65rem);flex-wrap:nowrap;list-style:none;margin:0;padding:0;min-width:0}
+#mainHeader .nav-links>li{position:relative;flex:none;list-style:none}
+#mainHeader .nav-links>li>a{white-space:nowrap}
+#mainHeader .whp-service-trigger{display:flex;align-items:center;gap:0}
+#mainHeader .whp-service-trigger>a{white-space:nowrap}
+#mainHeader .whp-services-toggle{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;background:transparent;border:0;color:#a5b4cf;padding:8px 6px;line-height:1}
+#mainHeader .whp-services-toggle:hover,#mainHeader .whp-services-toggle:focus-visible{color:#79a9ff}
+#mainHeader .whp-nav-submenu{display:none!important;position:absolute!important;top:calc(100% + 12px)!important;left:50%!important;transform:translateX(-50%)!important;width:min(700px,calc(100vw - 40px))!important;max-height:none!important;overflow:visible!important;margin:0!important;padding:20px!important;border:1px solid #2a3959!important;border-radius:16px!important;background:#101729!important;box-shadow:0 24px 65px rgba(0,0,0,.65)!important;z-index:3000!important;gap:0!important}
+#mainHeader .whp-nav-submenu:before{content:"";position:absolute;top:-13px;left:0;right:0;height:14px}
+#mainHeader .whp-all-services{display:flex;align-items:center;gap:12px;border-radius:10px;padding:12px 14px;background:#17294b;color:#fff;text-decoration:none;font-weight:700;font-size:14px;line-height:1.3;margin-bottom:18px}
+#mainHeader .whp-all-services .fa-arrow-right{margin-left:auto;color:#7caaff}
+#mainHeader .whp-all-services:hover{background:#214179}
+#mainHeader .whp-mega-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+#mainHeader .whp-mega-column{display:flex;flex-direction:column;gap:3px;min-width:0}
+#mainHeader .whp-mega-heading{font-size:11px;line-height:1.4;letter-spacing:1.2px;color:#79a9ff;font-weight:800;padding:0 9px 8px}
+#mainHeader .whp-mega-column>a{display:flex;gap:12px;align-items:center;color:#cbd6ea;text-decoration:none;font-size:13px;font-weight:500;line-height:1.4;padding:8px 9px;border-radius:8px;white-space:normal}
+#mainHeader .whp-mega-column>a i{flex:0 0 25px;display:inline-flex;justify-content:center;align-items:center;height:25px;border-radius:7px;background:#1c3151;color:#76acff;font-size:12px}
+#mainHeader .whp-mega-column>a:hover,#mainHeader .whp-mega-column>a:focus-visible{color:white;background:#1b3156}
+#mainHeader .whp-mega-column>a:hover i{background:#244b87}
+#mainHeader a:focus-visible,#mainHeader button:focus-visible{outline:2px solid #79a9ff;outline-offset:3px}
+@media(min-width:1025px){
+ #mainHeader .whp-nav-services:hover .whp-nav-submenu,#mainHeader .whp-nav-services:focus-within .whp-nav-submenu,#mainHeader .whp-nav-services.open .whp-nav-submenu{display:block!important}
+ #mainHeader .nav-links>.mobile-drawer-header,#mainHeader .nav-links>.mobile-quote-container,#mainHeader .nav-links>.mobile-auth-container{display:none!important}
+ #mainHeader .mobile-toggle{display:none!important}
+}
+@media(max-width:1024px){
+ #mainHeader .nav-container{min-height:66px;padding:.75rem 1.25rem}
+ #mainHeader .mobile-toggle{display:block!important;flex:none;background:none;border:0;color:#fff;font-size:1.5rem;cursor:pointer}
+ #mainHeader .nav-links{position:fixed!important;top:0!important;right:0!important;bottom:0!important;left:auto!important;width:100vw!important;max-width:100vw!important;min-width:0!important;height:100dvh!important;max-height:100dvh!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;gap:0!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior:contain;background:#070913!important;padding:1.2rem 1.35rem 2rem!important;transform:translateX(105%)!important;transition:transform .25s ease!important;box-shadow:-15px 0 35px #0008;z-index:2500!important;visibility:hidden}
+ #mainHeader .nav-links.active{transform:translateX(0)!important;visibility:visible}
+ #mainHeader .nav-links>li{flex:none!important;width:100%!important;position:relative;border-bottom:1px solid #ffffff10;text-align:left}
+ #mainHeader .nav-links>li>a{display:block!important;padding:.78rem .25rem!important;white-space:normal}
+ #mainHeader .nav-links>.mobile-drawer-header{display:flex!important;justify-content:space-between;align-items:center;margin-bottom:.5rem;padding-bottom:1rem}
+ #mainHeader .nav-links>.mobile-drawer-header .logo{padding:0!important}
+ #mainHeader .whp-service-trigger{display:flex;justify-content:space-between;align-items:center}
+ #mainHeader .whp-service-trigger>a{display:block;padding:.78rem .25rem;font-size:1rem;color:#e2e8f0;text-decoration:none;flex:1}
+ #mainHeader .whp-services-toggle{min-height:44px;min-width:48px;border-left:1px solid #ffffff18;font-size:1rem}
+ #mainHeader .whp-nav-submenu{position:static!important;top:auto!important;left:auto!important;transform:none!important;width:100%!important;max-height:none!important;overflow:visible!important;margin:0 0 .7rem!important;padding:12px 3px!important;border:0!important;border-left:2px solid #0055ff!important;border-radius:0!important;box-shadow:none!important;background:transparent!important}
+ #mainHeader .whp-nav-services.open .whp-nav-submenu{display:block!important}
+ #mainHeader .whp-nav-submenu:before{display:none}
+ #mainHeader .whp-all-services{font-size:13px;padding:10px;margin:0 4px 14px}
+ #mainHeader .whp-mega-grid{grid-template-columns:1fr;gap:16px}
+ #mainHeader .whp-mega-heading{font-size:10px;padding:0 8px 5px}
+ #mainHeader .whp-mega-column>a{padding:7px 9px;font-size:13px}
+ #mainHeader .nav-links>.desktop-only-quote{display:none!important}
+ #mainHeader .nav-links>.mobile-quote-container{display:block!important;margin-top:1rem;border:0}
+ #mainHeader .nav-links>.mobile-quote-container>a{display:flex!important;justify-content:center;padding:.8rem 1rem!important;background:#0055ff!important;color:#fff!important;border-radius:8px}
+ #mainHeader .nav-links>.mobile-auth-container{display:flex!important;flex-direction:row;gap:10px;margin-top:1rem;border:0}
+ #mainHeader .nav-links>.mobile-auth-container a{flex:1;text-align:center;display:flex!important;justify-content:center;align-items:center;padding:.55rem 1rem!important}
+}
+@media(prefers-reduced-motion:reduce){#mainHeader .nav-links{transition:none!important}}
+
+/* Mobile navigation: full-screen drawer, full viewport height. */
+@media(max-width:1024px){
+  #mainHeader .nav-links{box-sizing:border-box!important;padding:1rem clamp(.55rem,1.6vw,1.15rem) 1.5rem!important;}
+  #mainHeader .nav-links>li>a{font-size:1rem!important;line-height:1.35!important;overflow-wrap:anywhere!important;}
+  #mainHeader .whp-service-trigger>a{font-size:1rem!important;overflow-wrap:anywhere!important;min-width:0;}
+  #mainHeader .whp-services-toggle{min-width:34px!important;padding:6px!important;}
+  #mainHeader .whp-nav-submenu{box-sizing:border-box!important;min-width:0!important;}
+  #mainHeader .whp-mega-column>a{font-size:clamp(.68rem,2.3vw,.84rem)!important;gap:6px!important;padding:7px 4px!important;overflow-wrap:anywhere!important;}
+  #mainHeader .whp-mega-column>a i{flex-basis:20px!important;width:20px!important;height:20px!important;}
+  #mainHeader .whp-all-services{font-size:clamp(.72rem,2.4vw,.84rem)!important;padding:8px!important;}
+  #mainHeader .nav-links>.mobile-auth-container{gap:5px!important;flex-wrap:wrap!important;}
+  #mainHeader .nav-links>.mobile-auth-container a{font-size:.9rem!important;padding:.5rem .3rem!important;min-width:0!important;}
+  #mainHeader .nav-links>.mobile-drawer-header .logo-img{max-width:calc(100% - 35px)!important;height:auto!important;max-height:28px!important;}
+  #mainHeader .nav-links>.mobile-drawer-header{gap:4px!important;}
+  #mainHeader .nav-links>.mobile-drawer-header .close-drawer-btn{flex:0 0 28px!important;}
+}
